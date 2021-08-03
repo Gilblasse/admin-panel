@@ -1,0 +1,9 @@
+{
+    "extends": ["react-app", "prettier"],
+    "rules": {
+        "prettier/prettier":  [ "error", { "endOfLine":"auto", "printWidth": 80, "trailingComma": "es5", "semi": false, "doubleQuote":true, "jsxSingleQuote": true, "singleQuote": false, "useTabs": false, "tabWidth":4 } ],
+        "no-alert":"warn",
+        "no-console":["error", { "allow": ["warn","error"] }]
+    },
+    "plugins": ["prettier"]
+}

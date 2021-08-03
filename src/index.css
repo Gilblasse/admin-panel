@@ -1,3 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --faded-color: #caced7;
+  --tertiary-color: #7da0da;
+  --subtile-color: #727784;
+  --bold-color: #292928;
+  --norm-color: #383838;
+  --secondary-color: #50c5d9;
+  --tertiary-color: #7da0da;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +30,56 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#MainHeader .filter-svg svg {
+  height: 1.5em !important;
+  width: 1.5em !important;
+}
+
+/* #MainHeader .search {
+  width: 28rem; box-shadow: 0 0 0 2px rgb(202 206 215 / 20%) !important;
+} */
+
+#MainHeader .ant-input:focus,
+.ant-input-focused {
+  border-color: var(--faded-color) !important;
+  box-shadow: none;
+  outline: none;
+}
+
+#MainHeader .search .ant-input:hover,
+.search .ant-input:focus {
+  border-color: var(--faded-color);
+  border-right: none;
+  outline: none;
+}
+
+#MainHeader .search .ant-input-group .ant-input-group-addon .ant-btn-icon-only {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-left: none !important;
+}
+
+#MainHeader
+  .search
+  .ant-input-group
+  .ant-input-group-addon
+  .ant-btn-icon-only:focus,
+#MainHeader .ant-btn:hover,
+#MainHeader .ant-btn:focus {
+  border-color: var(--faded-color);
+  box-shadow: none;
+  outline: none;
+}
+
+#MainHeader .ant-btn {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+#MainHeader .ant-input {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
